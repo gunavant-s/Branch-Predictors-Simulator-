@@ -1,0 +1,6 @@
+for ($m = 7; $m -le 20 ; $m++) {
+>>     for ($n = 0; $n -le $m; $n++) {
+>>         Write-Host "Running with m=$m and n=$n"
+>>         ./testing gshare $m $n <file.name> | Out-File -Append -FilePath graph_b.txt
+>>     }
+>> }
